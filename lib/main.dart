@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spotity_clon_rebust_test/player/page.dart';
 import 'package:spotity_clon_rebust_test/root/page.dart';
 
 void main() {
@@ -24,6 +25,9 @@ class _MyAppState extends State<MyApp> {
       title: 'Rebustify',
       navigatorKey: navigatorKey,
       home: RootApp(),
+      routes: {
+        "/player": (context) => Player()
+      },
     );
   }
 }
